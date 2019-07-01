@@ -21,4 +21,11 @@ This app can be used to get the total number of Inserts/Updates on a collection 
   </appSettings>
 </configuration>
 
-3. to run
+3. To run
+  >Download Publish folder
+  >Edit CosmosChangefeed.dll.config (update EndPointUrl, AuthorizationKey, DatabaseName,CollectionName)
+  >Install .net core 2.1 runtime
+  >run dotnet CosmosChangefeed.dll 
+    - wait till it creates a checkpoint
+    - run your data load
+    - hit enter...
